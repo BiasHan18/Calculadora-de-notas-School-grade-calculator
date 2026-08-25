@@ -160,3 +160,4 @@ elif contador == 10:
     nota_mayor = max(notas)
     nota_menor = min(notas)
 print(f"Esta es tu mejor nota {nota_mayor}, Esta es tu peor nota {nota_menor}, Este es tu promedio {float(suma)/cant_de_notas}")
+input("presiona enter para continuar...")
