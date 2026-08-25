@@ -61,13 +61,13 @@ if cant_de_notas > 1 and cant_de_notas <= 10:
                                                                             else:
                                                                                 if contador >= 10:
                                                                                     j = float(input("introduzca la décima nota: "))
-                                                                                    if j > 1 and j < 20:
-                                                                                        limitación = "yes"
-                                                                                        continue
-                                                                                    elif not j > 1 and not j < 20:
-                                                                                        print("nota inválida")
-                                                                                        limitación = "yes"
-                                                                                        continue
+                                                                                        if j > 1 and j < 20:
+                                                                                            limitación = "yes"
+                                                                                            continue
+                                                                                        elif not j > 1 and not j < 20:
+                                                                                            print("nota inválida")
+                                                                                            limitación = "yes"
+                                                                                            continue
                                                                                 else:
                                                                                     break
                                                                         else:
