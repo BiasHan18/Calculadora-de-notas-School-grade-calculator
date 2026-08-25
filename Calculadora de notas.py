@@ -61,13 +61,13 @@ if cant_de_notas > 1 and cant_de_notas <= 10:
                                                                             else:
                                                                                 if contador >= 10:
                                                                                     j = float(input("introduzca la décima nota: "))
-                                                                                        if j > 1 and j < 20:
-                                                                                            limitación = "yes"
-                                                                                            continue
-                                                                                        elif not j > 1 and not j < 20:
-                                                                                            print("nota inválida")
-                                                                                            limitación = "yes"
-                                                                                            continue
+                                                                                    limitación = "yes"
+                                                                                    if j > 1 and j < 20:
+                                                                                        continue
+                                                                                    elif not j > 1 and not j < 20:
+                                                                                        print("nota inválida")
+                                                                                        limitación = "yes"
+                                                                                        continue
                                                                                 else:
                                                                                     break
                                                                         else:
@@ -160,4 +160,3 @@ elif contador == 10:
     nota_mayor = max(notas)
     nota_menor = min(notas)
 print(f"Esta es tu mejor nota {nota_mayor}, Esta es tu peor nota {nota_menor}, Este es tu promedio {float(suma)/cant_de_notas}")
-input("presiona enter para continuar...")
