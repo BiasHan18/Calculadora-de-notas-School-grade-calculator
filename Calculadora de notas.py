@@ -97,9 +97,10 @@ if cant_de_notas > 1 and cant_de_notas <= 10:
         else:
             limitación = "yes"
             continue
-        
 else:
     print("cantidad de notas inválida")
+    raise SystemExit
+
 # bloque 1
 if contador == 1:
     suma = a
