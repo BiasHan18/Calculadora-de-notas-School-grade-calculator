@@ -99,6 +99,7 @@ if cant_de_notas > 1 and cant_de_notas <= 10:
             continue
 else:
     print("cantidad de notas inválida")
+    input("presiona ENTER para cerrar...")
     raise SystemExit
 
 # bloque 1
