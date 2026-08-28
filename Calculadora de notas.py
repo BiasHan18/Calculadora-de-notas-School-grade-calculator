@@ -161,4 +161,11 @@ elif contador == 10:
     notas = [a, b, c, d, e, f, g, h, i, j]
     nota_mayor = max(notas)
     nota_menor = min(notas)
-print(f"Esta es tu mejor nota {nota_mayor}, Esta es tu peor nota {nota_menor}, Este es tu promedio {float(suma)/cant_de_notas}")
+else:
+    try:
+        print(f"Esta es tu mejor nota {nota_mayor}, Esta es tu peor nota {nota_menor}, Este es tu promedio {float(suma)/cant_de_notas}")
+    except Exception as error:
+        print(f"Se produjo un error: {error}")
+
+        input("Presiona ENTER para cerrar...")
+        raise SystemExit
