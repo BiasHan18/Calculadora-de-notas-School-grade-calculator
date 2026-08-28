@@ -1,7 +1,7 @@
 cant_de_notas = int(input("Introduzca la cantidad de notas que va a ingresar a continuación: "))
 contador = cant_de_notas
 limitación = "no"
-if cant_de_notas > 1 and cant_de_notas <= 10:
+if cant_de_notas >= 1 and cant_de_notas <= 10:
     while contador <= cant_de_notas:
         if limitación == "yes":
             break
